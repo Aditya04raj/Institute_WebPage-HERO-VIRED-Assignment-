@@ -1,38 +1,55 @@
+/* src/App.css */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background-color: #2196f3; /* Blue color at the top */
+  height: 100vh; /* Adjust the height based on your design */
+
+  /* Optional: Add a gradient background for a smoother transition */
+  background: linear-gradient(to bottom, #2196f3, #1e88e5);
 }
 
-.App-link {
-  color: #61dafb;
+.form-container {
+  width: 400px;
+  background-color: #fff;
+  border: 2px solid #000; /* Black border */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group {
+  margin-bottom: 15px;
 }
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.save-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: #4caf50; /* Green color for buttons */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #f44336; /* Red color for delete button */
+}
+
+/* Add more styles as needed */
